@@ -74,7 +74,7 @@ def play_battleship():
 
     while any(ship.hits < ship.size for ship in player.ships):
         player.display_board()
-        x, y = player.get_coordinates("Enter coordinates for your shot (row, column): ")
+        x, y = player.get_coordinates("Enter coordinate for your shot (row, column): ")
 
         if player.board[x][y] == 'O':
             print("Hit!")
